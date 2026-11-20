@@ -28,7 +28,7 @@ jobs:
         run: ruff check .
 
       - name: Build Docker Image
-        run: docker build -t expense-app:latest
+        run: docker build -t expense-app:latest .
 
       - name: Validate Docker Compose Configuration
         run: docker compose config
